@@ -1,0 +1,34 @@
+ELSC GAME - FINISHED VERSION 3
+==============================
+
+Study for the test while the Noise Tornado, Haruna and Hitomi get in your way!
+
+WHAT YOU NEED
+  Python 3 (free, from https://www.python.org/downloads/). The launchers
+  install pygame (the game library) by themselves the first time.
+
+HOW TO START IT
+  Windows:  double-click  "Finished Version 3 - Windows.bat"
+            (when installing Python, tick "Add python.exe to PATH")
+  Mac:      double-click  "Finished Version 3 - Mac.command"
+            The first time, macOS may block it: right-click it, choose Open,
+            then Open again (or System Settings > Privacy & Security > Open Anyway).
+  Linux:    in a terminal in this folder, run:  ./"Finished Version 3 - Linux.sh"
+            (or right-click it and choose "Run as a Program")
+
+  Any system, by hand:  open a terminal in this folder and run
+      python main.py        (Windows)
+      python3 main.py       (Mac and Linux)
+
+CONTROLS
+  Arrow keys ........ walk, and move around the menus
+  Stand on a chair .. study
+  Enter ............. choose
+  Esc ............... pause / go back
+  Letters ........... type a stage code or your name
+
+High scores are saved in highscores.json in this folder.
+
+WEB VERSION
+  To put the game on a website, see docs/PUBLISH_ON_WEBSITE.md
+  (build it with: python tools/build_web.py).

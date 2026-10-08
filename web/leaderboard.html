@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ELSC Game High Scores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  /* ELSC Game leaderboard. Paste your score server URL below (see server/SETUP_SCORES.md). */
+  :root {
+    --bg: #000000; --white: #fcfcfc; --gray: #bcbcbc; --dgray: #7c7c7c;
+    --yellow: #f8b800; --gold: #f8d878; --green: #00a800; --red: #f83800; --sky: #3cbcfc;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--white); }
+  body {
+    font-family: "Press Start 2P", ui-monospace, monospace;
+    display: flex; justify-content: center; padding: 24px 16px 40px;
+    -webkit-font-smoothing: none;
+  }
+  .board { width: 100%; max-width: 560px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+  .face { width: 64px; height: 64px; image-rendering: pixelated; background: var(--sky); border: 3px solid var(--white); flex: none; }
+  h1 { margin: 0; text-align: center; font-size: clamp(16px, 4.6vw, 26px); line-height: 1.5; font-weight: 400; }
+  h1 .elsc { color: var(--yellow); text-shadow: 3px 3px 0 #a81000; display: block; }
+  .plays { text-align: center; color: var(--gray); font-size: 10px; line-height: 1.8; margin: 0 0 18px; min-height: 18px; }
+  .plays b { color: var(--white); font-weight: 400; }
+  .tabs { display: flex; gap: 8px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap; }
+  .tab {
+    font: inherit; font-size: 11px; padding: 10px 12px; cursor: pointer;
+    background: var(--bg); color: var(--dgray); border: 3px solid #3c3c3c;
+  }
+  .tab[aria-selected="true"] { color: var(--c); border-color: var(--c); }
+  .tab:focus-visible { outline: 3px solid var(--white); outline-offset: 2px; }
+  .panel { border: 3px solid var(--white); padding: 18px 16px 12px; min-height: 360px; }
+  .status { text-align: center; color: var(--gray); font-size: 11px; padding: 120px 0; line-height: 2; }
+  .status.off { color: var(--red); }
+  ol { list-style: none; margin: 0; padding: 0; }
+  li { display: grid; grid-template-columns: 3.2em 1fr auto; gap: 8px; font-size: 12px; padding: 9px 2px; color: var(--gray); }
+  li:nth-child(-n+3) { color: var(--white); }
+  li:first-child { color: var(--yellow); }
+  li .score { font-variant-numeric: tabular-nums; }
+  .demo { text-align: center; color: var(--dgray); font-size: 9px; margin-top: 14px; line-height: 1.8; }
+  footer { text-align: center; color: var(--dgray); font-size: 9px; margin-top: 18px; line-height: 1.9; }
+  @media (max-width: 420px) { .face { width: 44px; height: 44px; } li { font-size: 10px; } }
+</style>
+</head>
+<body>
+<main class="board">
+  <header>
+    <img class="face" alt="Haruna" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABWUlEQVR4nOWWIXLDMBBFvzMGBgE+RGCAD1JgEJijFOYoAQYGBjmIQWEPYVAQoJkWNMnY0Wr1V0oynelHibza/7SW1gL+uwpj/Pej87KBrLE5/+qJ5tTcGECOOZWDqcBTpQFQq5/GgQkL5sqqAGmuKhlgbp4DkgQgGaZCaOfUe2+sSd20tBddAcsKLbEUQEp52Tl/ug8A8FdSN634jqVxpgqmCtRNi2kcMI3Dwiw0zih6CnKbzQwo7xRUXYeq6x4Wp1Jd9JIKlEwCaSNKSoGNAoTknFsmKv1UzIaMXZlu7ThWhcjzoA9zJ7xCFNM4UHeEummL+Twt1norRgziYk7L3Io1A6s5QGzC/t3/LK+3bwCAr4/T4r8UuzvoVQ4CSMlCIJqueUIg3mDMePd5hjvK3OXeod9UKtA9yGIPMKvuNxXKvfPGGXPJYxV6YIFgzSWv5E74C3G+/U7VD58OjJRdOU/iAAAAAElFTkSuQmCC">
+    <h1><span class="elsc">ELSC</span>HIGH SCORES</h1>
+    <img class="face" alt="Hitomi" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABrklEQVR4nMVXO47CMBB9QS5S+gAcwiVHoHSZkmNQpswxUrrMMVKm5ACUW1C6QMo2OOslM/Y4sMuTEMYaz3ueXwLwYVRSQ2swS22HSe43a1hCvEXI7q/IpedZAa+SS/0kI/AfIAXkVB+uaad9P6DvB5G/TREY97yImDhec1BbBMQixr2crFhATMCJ2EosEsBhC6k1mKm5EDbiIqmoonnlpqeTBbAMpl9cCsB8m36ca2PfSv6EFVe2C95ITkJcA9rYZR3fotTmGTsAlTYWdT0GB+wD5H6/Zx1mbFZcOwCzv5wBAI9vdmoplQ9YxmbFJU6BJKTSsMcQjeLaOdTOFTmWniEjECag6wAPwDdNETmIM4crMEgFpMavNpYtNKUUm4ZxD+BrvZ9MQXNe792mgSy0FHkKrIDwuNXGrtoyiIg/FLk2tgpjmAPbBXEagojbNCwtmrotJbqoBnKOYyE54oCiGsi9clFEKfIUsl3gL2fytt4//WbsmqYDwKcg2QXOEW3wgO6O5JrzwbU2m4IUOQD4toXujtDdEb5tk7YpX6SA1CDaCk4EKSB3+3fi4/+MvgGihbnEZIFXAQAAAABJRU5ErkJggg==">
+  </header>
+  <p class="plays" id="plays">&nbsp;</p>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" data-level="1" style="--c: var(--green)">LEVEL 1</button>
+    <button class="tab" role="tab" data-level="2" style="--c: var(--yellow)">LEVEL 2</button>
+    <button class="tab" role="tab" data-level="3" style="--c: var(--red)">LEVEL 3</button>
+  </div>
+  <section class="panel" id="panel" aria-live="polite"><p class="status">LOADING...</p></section>
+  <p class="demo" id="demo" hidden>DEMO SCORES: PASTE YOUR SCORE SERVER URL INTO THIS FILE</p>
+  <footer>BEAT THE NOISE. PASS THE TEST.</footer>
+</main>
+<script>
+  // ---- paste your score server URL here (it ends in /exec) ----
+  const SCORE_SERVER_URL = "https://script.google.com/macros/s/AKfycbxkMGJsik50WjshdZ2fdUoTB0nAqHJ4FdwxyTY8h31r-Vj8z38Z_xrEw1dF2N3j2mNx/exec";
+
+  const params = new URLSearchParams(location.search);
+  const EDITION = params.get("edition") === "friends" ? "friends" : "site";
+  const DEMO = !/^https:\/\//.test(SCORE_SERVER_URL);
+  const DEMO_TOP = {
+    1: [["MIKE", 6420], ["HARUNA", 5980], ["HITOMI", 5110], ["KENTA", 4870], ["YUKI", 4100], ["SORA", 3660]],
+    2: [["MIKE", 12340], ["HARUNA", 11020], ["HITOMI", 9870], ["KENTA", 8450], ["YUKI", 7310], ["SORA", 6200],
+        ["AOI", 5560], ["RIKU", 4390], ["MEI", 3120], ["TAKU", 1980]],
+    3: [["HITOMI", 15210], ["MIKE", 9930]]
+  };
+  let level = Number(params.get("level")) || 2;
+  if (![1, 2, 3].includes(level)) level = 2;
+
+  const panel = document.getElementById("panel");
+  const tabs = [...document.querySelectorAll(".tab")];
+
+  function ask(query) {
+    const url = SCORE_SERVER_URL + "?" + new URLSearchParams({ ...query, edition: EDITION });
+    return fetch(url).then(r => r.json());
+  }
+
+  function show(list) {
+    if (!list.length) {
+      panel.innerHTML = '<p class="status">NO SCORES YET.<br>BE THE FIRST!</p>';
+      return;
+    }
+    const ol = document.createElement("ol");
+    list.forEach((row, i) => {
+      const li = document.createElement("li");
+      const rank = document.createElement("span");
+      rank.textContent = String(i + 1).padStart(2, " ") + ".";
+      const name = document.createElement("span");
+      name.textContent = row.name;                       // textContent: names can't inject HTML
+      const score = document.createElement("span");
+      score.className = "score";
+      score.textContent = String(row.score);
+      li.append(rank, name, score);
+      ol.append(li);
+    });
+    panel.replaceChildren(ol);
+  }
+
+  function load(lv) {
+    level = lv;
+    tabs.forEach(t => t.setAttribute("aria-selected", String(Number(t.dataset.level) === lv)));
+    if (DEMO) { show(DEMO_TOP[lv].map(([name, score]) => ({ name, score }))); return; }
+    panel.innerHTML = '<p class="status">LOADING...</p>';
+    ask({ action: "top", level: lv })
+      .then(d => { if (level === lv) d.ok ? show(d.top) : offline(); })
+      .catch(() => { if (level === lv) offline(); });
+  }
+
+  function offline() {
+    panel.innerHTML = '<p class="status off">OFFLINE<br><br>TRY AGAIN LATER</p>';
+  }
+
+  function loadPlays() {
+    const el = document.getElementById("plays");
+    if (DEMO) { el.innerHTML = "GAMES PLAYED: <b>123</b> &nbsp; TODAY: <b>7</b>"; return; }
+    ask({ action: "stats" })
+      .then(d => { if (d.ok) el.innerHTML = "GAMES PLAYED: <b>" + Number(d.plays) + "</b> &nbsp; TODAY: <b>" + Number(d.plays_today) + "</b>"; })
+      .catch(() => {});
+  }
+
+  tabs.forEach(t => t.addEventListener("click", () => load(Number(t.dataset.level))));
+  document.addEventListener("keydown", e => {
+    if (e.key === "ArrowLeft") load(level === 1 ? 3 : level - 1);
+    if (e.key === "ArrowRight") load(level === 3 ? 1 : level + 1);
+  });
+  document.getElementById("demo").hidden = !DEMO;
+  load(level);
+  loadPlays();
+  if (!DEMO) setInterval(() => { load(level); loadPlays(); }, 60000);
+</script>
+</body>
+</html>

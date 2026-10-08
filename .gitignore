@@ -1,0 +1,13 @@
+# Made by the build (python tools/build_web.py); the playable copy lives on the gh-pages branch
+build_web/
+
+# Python's own scratch files
+__pycache__/
+*.pyc
+
+# High scores saved on this computer
+highscores.json
+
+# Archives
+*.7z
+*.zip

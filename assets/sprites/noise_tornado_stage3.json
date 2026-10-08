@@ -1,0 +1,58 @@
+{
+  "stage": 3,
+  "sheet": "noise_tornado_stage3.png",
+  "frame_size": [
+    64,
+    64
+  ],
+  "tiles": [
+    4,
+    4
+  ],
+  "frames": 6,
+  "fps": 10,
+  "loop": true,
+  "frames_xywh": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 64,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 128,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 192,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 256,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "x": 320,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    }
+  ],
+  "hitbox_suggested": [
+    40,
+    40
+  ],
+  "note": "Play frames 0-5 in a loop. Use a hitbox smaller than the drawing, centered."
+}

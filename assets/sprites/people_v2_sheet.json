@@ -1,0 +1,535 @@
+{
+ "sheet": "people_v2_sheet.png",
+ "note": "Each sprite is already stacked from up to 3 NES layers (each layer <= 3 NES colors).",
+ "hitomi_walk": "hitomi_<down|up|left|right>_<stand|walk1|walk2>, walk1/walk2 about 8 changes per second",
+ "hitomi_point": "'DID YOU STUDY?!' pose: loop point1/point2 at about 4 per second",
+ "hitomi_desk": "hitomi_desk_work1/2: sitting at her desk facing left (toward her monitor and the room): loop work1/work2 at 2 per second, drawn over office_chair",
+ "haruna": "type1/type2 at her desk (facing right, toward her desk, 2 per second); call1/call2 when she calls out (4 per second); toss when she drops the headphones (0.4 s)",
+ "portraits": "results screen: haruna smile/talk ('DID YOU PASS?'), hitomi cheer1/cheer2 (PASSED), sorry1/sorry2 (FAILED), each pair loops at 4 per second",
+ "sprites": {
+  "hitomi_point1": {
+   "x": 0,
+   "y": 0,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_point2": {
+   "x": 16,
+   "y": 0,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_desk_work1": {
+   "x": 32,
+   "y": 0,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_desk_work2": {
+   "x": 48,
+   "y": 0,
+   "w": 16,
+   "h": 16
+  },
+  "haruna_type1": {
+   "x": 64,
+   "y": 0,
+   "w": 16,
+   "h": 16
+  },
+  "haruna_type2": {
+   "x": 80,
+   "y": 0,
+   "w": 16,
+   "h": 16
+  },
+  "haruna_call1": {
+   "x": 96,
+   "y": 0,
+   "w": 16,
+   "h": 16
+  },
+  "haruna_call2": {
+   "x": 112,
+   "y": 0,
+   "w": 16,
+   "h": 16
+  },
+  "haruna_toss": {
+   "x": 128,
+   "y": 0,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_down_stand": {
+   "x": 144,
+   "y": 0,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_down_walk1": {
+   "x": 160,
+   "y": 0,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_down_walk2": {
+   "x": 176,
+   "y": 0,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_up_stand": {
+   "x": 0,
+   "y": 16,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_up_walk1": {
+   "x": 16,
+   "y": 16,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_up_walk2": {
+   "x": 32,
+   "y": 16,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_left_stand": {
+   "x": 48,
+   "y": 16,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_left_walk1": {
+   "x": 64,
+   "y": 16,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_left_walk2": {
+   "x": 80,
+   "y": 16,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_right_stand": {
+   "x": 96,
+   "y": 16,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_right_walk1": {
+   "x": 112,
+   "y": 16,
+   "w": 16,
+   "h": 16
+  },
+  "hitomi_right_walk2": {
+   "x": 128,
+   "y": 16,
+   "w": 16,
+   "h": 16
+  },
+  "portrait_haruna_smile": {
+   "x": 0,
+   "y": 32,
+   "w": 32,
+   "h": 32
+  },
+  "portrait_haruna_talk": {
+   "x": 32,
+   "y": 32,
+   "w": 32,
+   "h": 32
+  },
+  "portrait_hitomi_smile": {
+   "x": 64,
+   "y": 32,
+   "w": 32,
+   "h": 32
+  },
+  "portrait_hitomi_cheer1": {
+   "x": 96,
+   "y": 32,
+   "w": 32,
+   "h": 32
+  },
+  "portrait_hitomi_cheer2": {
+   "x": 128,
+   "y": 32,
+   "w": 32,
+   "h": 32
+  },
+  "portrait_hitomi_sorry1": {
+   "x": 160,
+   "y": 32,
+   "w": 32,
+   "h": 32
+  },
+  "portrait_hitomi_sorry2": {
+   "x": 192,
+   "y": 32,
+   "w": 32,
+   "h": 32
+  }
+ },
+ "layers": {
+  "hitomi_point1": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_point2": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_desk_work1": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_desk_work2": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "haruna_type1": {
+   "1": [
+    "000000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "AC7C00",
+    "FCFCFC"
+   ]
+  },
+  "haruna_type2": {
+   "1": [
+    "000000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "AC7C00",
+    "FCFCFC"
+   ]
+  },
+  "haruna_call1": {
+   "1": [
+    "000000",
+    "F0D0B0",
+    "F87858"
+   ],
+   "2": [
+    "0058F8",
+    "AC7C00",
+    "FCFCFC"
+   ]
+  },
+  "haruna_call2": {
+   "1": [
+    "000000",
+    "F0D0B0",
+    "F87858"
+   ],
+   "2": [
+    "0058F8",
+    "AC7C00",
+    "FCFCFC"
+   ]
+  },
+  "haruna_toss": {
+   "1": [
+    "000000",
+    "F0D0B0",
+    "F87858"
+   ],
+   "2": [
+    "0058F8",
+    "AC7C00",
+    "FCFCFC"
+   ]
+  },
+  "hitomi_down_stand": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_down_walk1": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_down_walk2": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_up_stand": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_up_walk1": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_up_walk2": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_left_stand": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_left_walk1": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_left_walk2": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_right_stand": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_right_walk1": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "hitomi_right_walk2": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "portrait_haruna_smile": {
+   "1": [
+    "000000",
+    "F0D0B0",
+    "F87858"
+   ],
+   "2": [
+    "0058F8",
+    "AC7C00",
+    "FCFCFC"
+   ]
+  },
+  "portrait_haruna_talk": {
+   "1": [
+    "000000",
+    "F0D0B0",
+    "F87858"
+   ],
+   "2": [
+    "0058F8",
+    "AC7C00",
+    "FCFCFC"
+   ]
+  },
+  "portrait_hitomi_smile": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "3": [
+    "881400",
+    "F87858",
+    "FCFCFC"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "portrait_hitomi_cheer1": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "3": [
+    "881400",
+    "F87858",
+    "FCFCFC"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "portrait_hitomi_cheer2": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "3": [
+    "881400",
+    "F87858",
+    "FCFCFC"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "portrait_hitomi_sorry1": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "3": [
+    "881400",
+    "F87858"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  },
+  "portrait_hitomi_sorry2": {
+   "1": [
+    "000000",
+    "503000",
+    "F0D0B0"
+   ],
+   "3": [
+    "881400",
+    "F87858"
+   ],
+   "2": [
+    "0058F8",
+    "F8B800",
+    "F8D878"
+   ]
+  }
+ }
+}

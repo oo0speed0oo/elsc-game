@@ -1,0 +1,252 @@
+{
+  "tile_size": 16,
+  "sheet": "furniture_sheet.png",
+  "sprites": {
+    "carpet_a": {
+      "x": 112,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "carpet_b": {
+      "x": 112,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    },
+    "chair_blue_E": {
+      "x": 48,
+      "y": 48,
+      "w": 16,
+      "h": 16
+    },
+    "chair_blue_N": {
+      "x": 96,
+      "y": 32,
+      "w": 16,
+      "h": 16
+    },
+    "chair_blue_S": {
+      "x": 112,
+      "y": 32,
+      "w": 16,
+      "h": 16
+    },
+    "chair_blue_W": {
+      "x": 32,
+      "y": 48,
+      "w": 16,
+      "h": 16
+    },
+    "chair_green_E": {
+      "x": 80,
+      "y": 64,
+      "w": 16,
+      "h": 16
+    },
+    "chair_green_N": {
+      "x": 32,
+      "y": 64,
+      "w": 16,
+      "h": 16
+    },
+    "chair_green_S": {
+      "x": 48,
+      "y": 64,
+      "w": 16,
+      "h": 16
+    },
+    "chair_green_W": {
+      "x": 64,
+      "y": 64,
+      "w": 16,
+      "h": 16
+    },
+    "chair_red_E": {
+      "x": 48,
+      "y": 80,
+      "w": 16,
+      "h": 16
+    },
+    "chair_red_N": {
+      "x": 96,
+      "y": 64,
+      "w": 16,
+      "h": 16
+    },
+    "chair_red_S": {
+      "x": 112,
+      "y": 64,
+      "w": 16,
+      "h": 16
+    },
+    "chair_red_W": {
+      "x": 32,
+      "y": 80,
+      "w": 16,
+      "h": 16
+    },
+    "chair_white_E": {
+      "x": 112,
+      "y": 48,
+      "w": 16,
+      "h": 16
+    },
+    "chair_white_N": {
+      "x": 64,
+      "y": 48,
+      "w": 16,
+      "h": 16
+    },
+    "chair_white_S": {
+      "x": 80,
+      "y": 48,
+      "w": 16,
+      "h": 16
+    },
+    "chair_white_W": {
+      "x": 96,
+      "y": 48,
+      "w": 16,
+      "h": 16
+    },
+    "desk_placeholder": {
+      "x": 96,
+      "y": 112,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_east_blue": {
+      "x": 16,
+      "y": 96,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_east_red": {
+      "x": 80,
+      "y": 80,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_east_teal": {
+      "x": 16,
+      "y": 112,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_east_yellow": {
+      "x": 80,
+      "y": 96,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_front_blue": {
+      "x": 0,
+      "y": 96,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_front_red": {
+      "x": 64,
+      "y": 80,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_front_teal": {
+      "x": 0,
+      "y": 112,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_front_yellow": {
+      "x": 64,
+      "y": 96,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_north_blue": {
+      "x": 48,
+      "y": 96,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_north_red": {
+      "x": 112,
+      "y": 80,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_north_teal": {
+      "x": 48,
+      "y": 112,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_north_yellow": {
+      "x": 112,
+      "y": 96,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_top": {
+      "x": 64,
+      "y": 112,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_west_blue": {
+      "x": 32,
+      "y": 96,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_west_red": {
+      "x": 96,
+      "y": 80,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_west_teal": {
+      "x": 32,
+      "y": 112,
+      "w": 16,
+      "h": 16
+    },
+    "shelf_west_yellow": {
+      "x": 96,
+      "y": 96,
+      "w": 16,
+      "h": 16
+    },
+    "table_long": {
+      "x": 0,
+      "y": 0,
+      "w": 32,
+      "h": 96
+    },
+    "table_small": {
+      "x": 80,
+      "y": 32,
+      "w": 16,
+      "h": 16
+    },
+    "table_square": {
+      "x": 80,
+      "y": 0,
+      "w": 32,
+      "h": 32
+    },
+    "wall_placeholder": {
+      "x": 80,
+      "y": 112,
+      "w": 16,
+      "h": 16
+    },
+    "whiteboard": {
+      "x": 32,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    }
+  }
+}

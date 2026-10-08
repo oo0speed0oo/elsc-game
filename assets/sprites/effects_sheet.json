@@ -1,0 +1,127 @@
+{
+  "sheet": "effects_sheet.png",
+  "sprites": {
+    "bubble_huh": {
+      "x": 0,
+      "y": 0,
+      "w": 13,
+      "h": 14
+    },
+    "bubble_bang": {
+      "x": 15,
+      "y": 0,
+      "w": 13,
+      "h": 14
+    },
+    "bubble_curse": {
+      "x": 30,
+      "y": 0,
+      "w": 21,
+      "h": 14
+    },
+    "bubble_music": {
+      "x": 53,
+      "y": 0,
+      "w": 10,
+      "h": 14
+    },
+    "bubble_dots": {
+      "x": 65,
+      "y": 0,
+      "w": 21,
+      "h": 14
+    },
+    "bubble_ha": {
+      "x": 88,
+      "y": 0,
+      "w": 21,
+      "h": 14
+    },
+    "bubble_lol": {
+      "x": 111,
+      "y": 0,
+      "w": 17,
+      "h": 14
+    },
+    "bubble_blah": {
+      "x": 130,
+      "y": 0,
+      "w": 17,
+      "h": 14
+    },
+    "plus_1": {
+      "x": 0,
+      "y": 16,
+      "w": 11,
+      "h": 7
+    },
+    "plus_2": {
+      "x": 13,
+      "y": 16,
+      "w": 11,
+      "h": 7
+    },
+    "plus_3": {
+      "x": 26,
+      "y": 16,
+      "w": 11,
+      "h": 7
+    }
+  },
+  "hit_flash": {
+    "note": "Zelda-style hit flash, done in code: redraw the student sprite with its 3 colors swapped. Cycle normal -> flash_1 -> flash_2 -> normal ... for the 1 second of invincibility.",
+    "normal": {
+      "dark": "000000",
+      "skin": "F0D0B0",
+      "blazer": "(character's blazer)"
+    },
+    "flash_1": {
+      "dark": "FCFCFC",
+      "skin": "000000",
+      "blazer": "F83800"
+    },
+    "flash_2": {
+      "dark": "F83800",
+      "skin": "FCFCFC",
+      "blazer": "0058F8"
+    },
+    "switch_every_frames": 3
+  },
+  "study_bar_flash": {
+    "note": "While the student is charging, the filled part of the study bar pulses (done in code).",
+    "fill_colors_cycle": [
+      "F8B800",
+      "F8D878",
+      "FCE0A8",
+      "F8D878"
+    ],
+    "switch_every_frames": 4
+  },
+  "plus_popup": {
+    "note": "RPG-style '+1 / +2 / +3' over the student's head: once per second while charging, showing how much that second added. Use plus_3 for +3, plus_2 for +2, plus_1 for +1.",
+    "motion": "appear, rise 12 px over 0.6 s with a 2 px bounce at the start, blink for 0.2 s, then gone",
+    "start_offset_from_student": [
+      3,
+      -14
+    ]
+  },
+  "chair_bonus": {
+    "note": "Charging is counted in points. 1 point = 5% of the study bar (so +1 per second = the old 5% per second).",
+    "base_points_per_second": 1,
+    "bonus_points_per_second": {
+      "green": 3,
+      "red": 2,
+      "white": 1,
+      "blue": 1
+    },
+    "bonus_lasts_seconds": 2,
+    "bonus_resets_only_at_a_different_table": true,
+    "rule": "When you sit at a chair, you get that chair's bonus rate for the first 2 seconds, then +1 per second. The bonus only comes back when you sit at a DIFFERENT table than the one you last got a bonus from. Moving to another chair at the same table gives +1 only."
+  },
+  "noise_bubbles": {
+    "note": "Noise bubbles pop out of the top of the Noise Tornado.",
+    "every_seconds": 0.7,
+    "burst_on_lunge": 3,
+    "motion": "float up 8 px over 0.6 s, blink twice, disappear. Pick a random bubble each time."
+  }
+}

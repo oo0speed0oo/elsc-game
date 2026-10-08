@@ -1,0 +1,92 @@
+[
+  {
+    "n": 1,
+    "file": "01_title.png",
+    "caption": "Title screen: Start / Options / Stage Code"
+  },
+  {
+    "n": 2,
+    "file": "02_options.png",
+    "caption": "Options: music and sound FX volume"
+  },
+  {
+    "n": 3,
+    "file": "03_character_select.png",
+    "caption": "Character select: boy or girl"
+  },
+  {
+    "n": 4,
+    "file": "04_stage1_intro.png",
+    "caption": "Stage 1 intro"
+  },
+  {
+    "n": 5,
+    "file": "05_stage1_play.png",
+    "caption": "Stage 1: studying on a green chair (+3), bar flashing, small tornado laughing nearby"
+  },
+  {
+    "n": 6,
+    "file": "06_stage1_hit.png",
+    "caption": "Stage 1: hit! Knocked back and flashing (color swap)"
+  },
+  {
+    "n": 7,
+    "file": "07_stage1_pause.png",
+    "caption": "Esc: pause menu"
+  },
+  {
+    "n": 8,
+    "file": "08_stage1_times_up.png",
+    "caption": "Stage 1: time's up, everything freezes"
+  },
+  {
+    "n": 9,
+    "file": "09_stage1_results.png",
+    "caption": "The test: PASSED, on to Stage 2"
+  },
+  {
+    "n": 10,
+    "file": "10_stage2_intro.png",
+    "caption": "Stage 2 intro"
+  },
+  {
+    "n": 11,
+    "file": "11_stage2_play.png",
+    "caption": "Stage 2: red chair (+2). The 3 x 3 tornado noticed you: bubble burst + lunge"
+  },
+  {
+    "n": 12,
+    "file": "12_stage2_results.png",
+    "caption": "The test: PASSED, on to Stage 3"
+  },
+  {
+    "n": 13,
+    "file": "13_stage3_intro.png",
+    "caption": "Stage 3 intro"
+  },
+  {
+    "n": 14,
+    "file": "14_stage3_play.png",
+    "caption": "Stage 3: 8 seconds left, running from the 4 x 4 tornado to another table"
+  },
+  {
+    "n": 15,
+    "file": "15_stage3_failed.png",
+    "caption": "Failed Stage 3 (5th time): the stage code appears"
+  },
+  {
+    "n": 16,
+    "file": "16_stage_code.png",
+    "caption": "Title > Stage Code: typing it in"
+  },
+  {
+    "n": 17,
+    "file": "17_stage_code_wrong.png",
+    "caption": "A wrong code"
+  },
+  {
+    "n": 18,
+    "file": "18_course_complete.png",
+    "caption": "Passed Stage 3: YOU PASSED THE COURSE!!!"
+  }
+]

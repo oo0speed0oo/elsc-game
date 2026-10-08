@@ -1,0 +1,164 @@
+{
+ "width": 268,
+ "pieces": {
+  "top": "handheld_top.png",
+  "filler": "handheld_filler.png",
+  "bottom": "handheld_bottom.png"
+ },
+ "top_height": 280,
+ "bottom_height": 212,
+ "min_height": 492,
+ "layout": "Skin height = phone height x (268 / phone width), but at least min_height. Draw top at y 0, repeat the filler row from top_height down to (height - bottom_height), and the bottom piece at y = height - bottom_height. Then scale the whole skin to the phone's width (nearest-neighbor). If the phone is too short for min_height, scale to fit the height instead and center it on black.",
+ "screen": {
+  "x": 6,
+  "y": 22,
+  "w": 256,
+  "h": 240,
+  "piece": "top"
+ },
+ "status_light": {
+  "cx": 12,
+  "cy": 12,
+  "piece": "top",
+  "sprite_offset": [
+   -4,
+   -4
+  ],
+  "running": "led_green",
+  "paused": "led_off",
+  "offline_or_loading": "led_red"
+ },
+ "slide_pad": {
+  "x": 12,
+  "y": 14,
+  "w": 128,
+  "h": 128,
+  "piece": "bottom"
+ },
+ "buttons": {
+  "ok": {
+   "cx": 212,
+   "cy": 50,
+   "r": 24,
+   "piece": "bottom",
+   "up": "ok_up",
+   "down": "ok_down",
+   "touch_r": 30
+  },
+  "back": {
+   "cx": 194,
+   "cy": 112,
+   "r": 15,
+   "piece": "bottom",
+   "up": "back_up",
+   "down": "back_down",
+   "touch_r": 21
+  },
+  "pause": {
+   "cx": 104,
+   "cy": 172,
+   "r": 11,
+   "piece": "bottom",
+   "up": "pause_up",
+   "down": "pause_down",
+   "touch_r": 17
+  },
+  "sound": {
+   "cx": 164,
+   "cy": 172,
+   "r": 11,
+   "piece": "bottom",
+   "up": "sound_up",
+   "down": "sound_down",
+   "touch_r": 17
+  }
+ },
+ "sound_muted_mark": "sound_off_mark",
+ "brand_plate": {
+  "sprite": "brand_plate",
+  "rule": "if the filler gap is 30 or more, draw it centered in the gap"
+ },
+ "button_sprite_offset": "draw a button sprite at (cx - r - 2, cy - r - 2)",
+ "body_color": "#F8B800",
+ "parts_sheet": "handheld_parts.png",
+ "parts": {
+  "ok_up": {
+   "x": 0,
+   "y": 0,
+   "w": 53,
+   "h": 53
+  },
+  "ok_down": {
+   "x": 55,
+   "y": 0,
+   "w": 53,
+   "h": 53
+  },
+  "back_up": {
+   "x": 110,
+   "y": 0,
+   "w": 35,
+   "h": 35
+  },
+  "back_down": {
+   "x": 147,
+   "y": 0,
+   "w": 35,
+   "h": 35
+  },
+  "pause_up": {
+   "x": 184,
+   "y": 0,
+   "w": 27,
+   "h": 27
+  },
+  "pause_down": {
+   "x": 213,
+   "y": 0,
+   "w": 27,
+   "h": 27
+  },
+  "sound_up": {
+   "x": 242,
+   "y": 0,
+   "w": 27,
+   "h": 27
+  },
+  "sound_down": {
+   "x": 271,
+   "y": 0,
+   "w": 27,
+   "h": 27
+  },
+  "sound_off_mark": {
+   "x": 300,
+   "y": 0,
+   "w": 27,
+   "h": 27
+  },
+  "brand_plate": {
+   "x": 329,
+   "y": 0,
+   "w": 54,
+   "h": 20
+  },
+  "led_green": {
+   "x": 385,
+   "y": 0,
+   "w": 9,
+   "h": 9
+  },
+  "led_red": {
+   "x": 396,
+   "y": 0,
+   "w": 9,
+   "h": 9
+  },
+  "led_off": {
+   "x": 407,
+   "y": 0,
+   "w": 9,
+   "h": 9
+  }
+ }
+}

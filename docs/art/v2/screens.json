@@ -1,0 +1,42 @@
+[
+ {
+  "file": "01_level_select.png",
+  "caption": "Choose your level (the old mode select)"
+ },
+ {
+  "file": "02_haruna_calls.png",
+  "caption": "Haruna calls out, with the headphones she dropped on the floor"
+ },
+ {
+  "file": "03_hitomi_out.png",
+  "caption": "Hitomi walked out of her desk (gate open) and blocks the way"
+ },
+ {
+  "file": "04_deadline_extended.png",
+  "caption": "Laptop grabbed: the game pauses, DEADLINE EXTENDED, the timer ticks up +10"
+ },
+ {
+  "file": "05_highlighter.png",
+  "caption": "Highlighter: every chair turns green and the book blinks green"
+ },
+ {
+  "file": "06_pizza_lure.png",
+  "caption": "Level 3: the pizza fell behind the shelf and the giant clouds crowd around it"
+ },
+ {
+  "file": "07_results_passed.png",
+  "caption": "The test: Haruna asks, Hitomi cheers YOU PASSED!"
+ },
+ {
+  "file": "08_results_failed.png",
+  "caption": "The test: Hitomi shakes her head, YOU FAILED..."
+ },
+ {
+  "file": "09_score_entry.png",
+  "caption": "After the run: your score and your name (up to 10 letters)"
+ },
+ {
+  "file": "10_high_scores.png",
+  "caption": "High scores, top 10 per level"
+ }
+]

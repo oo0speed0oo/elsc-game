@@ -1,0 +1,188 @@
+{
+  "tile_size": 16,
+  "sheet": "students_seated_sheet.png",
+  "loop": [
+    "read1",
+    "read2"
+  ],
+  "fps": 2,
+  "note": "Draw at the chair's position plus offset_from_chair. If draw_chair_on_top is true, draw the chair AFTER the student (the backrest hides the student's back).",
+  "sprites": {
+    "boy_seat_N_read1": {
+      "x": 0,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        0,
+        -7
+      ],
+      "draw_chair_on_top": false
+    },
+    "boy_seat_N_read2": {
+      "x": 16,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        0,
+        -7
+      ],
+      "draw_chair_on_top": false
+    },
+    "boy_seat_S_read1": {
+      "x": 32,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        0,
+        -8
+      ],
+      "draw_chair_on_top": true
+    },
+    "boy_seat_S_read2": {
+      "x": 48,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        0,
+        -8
+      ],
+      "draw_chair_on_top": true
+    },
+    "boy_seat_W_read1": {
+      "x": 64,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        1,
+        -6
+      ],
+      "draw_chair_on_top": false
+    },
+    "boy_seat_W_read2": {
+      "x": 80,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        1,
+        -6
+      ],
+      "draw_chair_on_top": false
+    },
+    "boy_seat_E_read1": {
+      "x": 96,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        -1,
+        -6
+      ],
+      "draw_chair_on_top": false
+    },
+    "boy_seat_E_read2": {
+      "x": 112,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        -1,
+        -6
+      ],
+      "draw_chair_on_top": false
+    },
+    "girl_seat_N_read1": {
+      "x": 0,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        0,
+        -7
+      ],
+      "draw_chair_on_top": false
+    },
+    "girl_seat_N_read2": {
+      "x": 16,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        0,
+        -7
+      ],
+      "draw_chair_on_top": false
+    },
+    "girl_seat_S_read1": {
+      "x": 32,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        0,
+        -8
+      ],
+      "draw_chair_on_top": true
+    },
+    "girl_seat_S_read2": {
+      "x": 48,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        0,
+        -8
+      ],
+      "draw_chair_on_top": true
+    },
+    "girl_seat_W_read1": {
+      "x": 64,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        1,
+        -6
+      ],
+      "draw_chair_on_top": false
+    },
+    "girl_seat_W_read2": {
+      "x": 80,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        1,
+        -6
+      ],
+      "draw_chair_on_top": false
+    },
+    "girl_seat_E_read1": {
+      "x": 96,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        -1,
+        -6
+      ],
+      "draw_chair_on_top": false
+    },
+    "girl_seat_E_read2": {
+      "x": 112,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "offset_from_chair": [
+        -1,
+        -6
+      ],
+      "draw_chair_on_top": false
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "tile_size": 16,
+  "sheet": "students_sheet.png",
+  "frames_per_direction": [
+    "stand",
+    "walk1",
+    "walk2"
+  ],
+  "walk_cycle": [
+    "walk1",
+    "walk2"
+  ],
+  "sprites": {
+    "boy_down_stand": {
+      "x": 0,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "boy_down_walk1": {
+      "x": 16,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "boy_down_walk2": {
+      "x": 32,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "boy_up_stand": {
+      "x": 48,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "boy_up_walk1": {
+      "x": 64,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "boy_up_walk2": {
+      "x": 80,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "boy_left_stand": {
+      "x": 96,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "boy_left_walk1": {
+      "x": 112,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "boy_left_walk2": {
+      "x": 128,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "boy_right_stand": {
+      "x": 144,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "boy_right_walk1": {
+      "x": 160,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "boy_right_walk2": {
+      "x": 176,
+      "y": 0,
+      "w": 16,
+      "h": 16
+    },
+    "girl_down_stand": {
+      "x": 0,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    },
+    "girl_down_walk1": {
+      "x": 16,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    },
+    "girl_down_walk2": {
+      "x": 32,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    },
+    "girl_up_stand": {
+      "x": 48,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    },
+    "girl_up_walk1": {
+      "x": 64,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    },
+    "girl_up_walk2": {
+      "x": 80,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    },
+    "girl_left_stand": {
+      "x": 96,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    },
+    "girl_left_walk1": {
+      "x": 112,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    },
+    "girl_left_walk2": {
+      "x": 128,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    },
+    "girl_right_stand": {
+      "x": 144,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    },
+    "girl_right_walk1": {
+      "x": 160,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    },
+    "girl_right_walk2": {
+      "x": 176,
+      "y": 16,
+      "w": 16,
+      "h": 16
+    }
+  }
+}

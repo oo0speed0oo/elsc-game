@@ -1,0 +1,448 @@
+{
+ "sheet": "objects_v2_sheet.png",
+ "sprites": {
+  "haruna_desk_top": {
+   "x": 0,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "FCA044",
+     "FCFCFC"
+    ],
+    "2": [
+     "000000",
+     "7C7C7C",
+     "BCBCBC"
+    ]
+   }
+  },
+  "haruna_desk_monitor": {
+   "x": 16,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "FCA044",
+     "FCFCFC"
+    ],
+    "2": [
+     "000000",
+     "7C7C7C",
+     "BCBCBC"
+    ]
+   }
+  },
+  "haruna_desk_papers": {
+   "x": 32,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "FCA044",
+     "FCFCFC"
+    ],
+    "2": [
+     "000000",
+     "7C7C7C",
+     "BCBCBC"
+    ]
+   }
+  },
+  "haruna_desk_bottom": {
+   "x": 48,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "FCA044",
+     "FCFCFC"
+    ]
+   }
+  },
+  "hitomi_desk_top_end": {
+   "x": 64,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "FCA044",
+     "FCFCFC"
+    ],
+    "2": [
+     "000000",
+     "7C7C7C",
+     "BCBCBC"
+    ]
+   }
+  },
+  "hitomi_desk_upper": {
+   "x": 80,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "FCA044",
+     "FCFCFC"
+    ]
+   }
+  },
+  "hitomi_desk_monitor": {
+   "x": 96,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "FCA044",
+     "FCFCFC"
+    ],
+    "2": [
+     "000000",
+     "7C7C7C",
+     "BCBCBC"
+    ]
+   }
+  },
+  "hitomi_desk_lower": {
+   "x": 112,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "FCA044",
+     "FCFCFC"
+    ]
+   }
+  },
+  "hitomi_desk_gate_closed": {
+   "x": 0,
+   "y": 16,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "FCA044",
+     "FCFCFC"
+    ]
+   }
+  },
+  "hitomi_desk_gate_open": {
+   "x": 16,
+   "y": 16,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "FCA044"
+    ]
+   }
+  },
+  "hitomi_desk_side_phone": {
+   "x": 32,
+   "y": 16,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "FCA044",
+     "FCFCFC"
+    ],
+    "2": [
+     "000000",
+     "7C7C7C",
+     "BCBCBC"
+    ]
+   }
+  },
+  "office_chair": {
+   "x": 48,
+   "y": 16,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "000000",
+     "7C7C7C",
+     "BCBCBC"
+    ]
+   }
+  },
+  "item_coffee": {
+   "x": 64,
+   "y": 16,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "000000",
+     "881400",
+     "FCFCFC"
+    ]
+   }
+  },
+  "item_headphones": {
+   "x": 80,
+   "y": 16,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "000000",
+     "3CBCFC",
+     "7C7C7C"
+    ]
+   }
+  },
+  "item_laptop": {
+   "x": 96,
+   "y": 16,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "3CBCFC",
+     "7C7C7C",
+     "BCBCBC"
+    ]
+   },
+   "note": "drawn on its table"
+  },
+  "item_highlighter": {
+   "x": 112,
+   "y": 16,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "000000",
+     "007800",
+     "B8F818"
+    ]
+   },
+   "note": "drawn on its table"
+  },
+  "item_pizza_box": {
+   "x": 0,
+   "y": 32,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "F83800",
+     "FCE0A8"
+    ]
+   },
+   "note": "sits on the bookshelf; the same box falls"
+  },
+  "item_pizza_open": {
+   "x": 16,
+   "y": 32,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "AC7C00",
+     "FCE0A8"
+    ],
+    "2": [
+     "F83800",
+     "F8B800",
+     "FCA044"
+    ]
+   },
+   "note": "on the floor; the clouds crowd around it"
+  },
+  "book_N": {
+   "x": 32,
+   "y": 32,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "000000",
+     "BCBCBC",
+     "FCFCFC"
+    ]
+   },
+   "offset_from_seated": [
+    0,
+    0
+   ]
+  },
+  "book_N_green": {
+   "x": 48,
+   "y": 32,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "000000",
+     "58D854",
+     "B8F818"
+    ]
+   },
+   "offset_from_seated": [
+    0,
+    0
+   ]
+  },
+  "book_S": {
+   "x": 64,
+   "y": 32,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "000000",
+     "BCBCBC",
+     "FCFCFC"
+    ]
+   },
+   "offset_from_seated": [
+    0,
+    -6
+   ]
+  },
+  "book_S_green": {
+   "x": 80,
+   "y": 32,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "000000",
+     "58D854",
+     "B8F818"
+    ]
+   },
+   "offset_from_seated": [
+    0,
+    -6
+   ]
+  },
+  "book_W": {
+   "x": 96,
+   "y": 32,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "000000",
+     "BCBCBC",
+     "FCFCFC"
+    ]
+   },
+   "offset_from_seated": [
+    0,
+    0
+   ]
+  },
+  "book_W_green": {
+   "x": 112,
+   "y": 32,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "000000",
+     "58D854",
+     "B8F818"
+    ]
+   },
+   "offset_from_seated": [
+    0,
+    0
+   ]
+  },
+  "book_E": {
+   "x": 0,
+   "y": 48,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "000000",
+     "BCBCBC",
+     "FCFCFC"
+    ]
+   },
+   "offset_from_seated": [
+    0,
+    0
+   ]
+  },
+  "book_E_green": {
+   "x": 16,
+   "y": 48,
+   "w": 16,
+   "h": 16,
+   "layers": {
+    "1": [
+     "000000",
+     "58D854",
+     "B8F818"
+    ]
+   },
+   "offset_from_seated": [
+    0,
+    0
+   ]
+  },
+  "coffee_station": {
+   "x": 0,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "layers": {
+    "3": [
+     "881400",
+     "F83800",
+     "FCFCFC"
+    ],
+    "2": [
+     "000000",
+     "7C7C7C",
+     "FCFCFC"
+    ],
+    "1": [
+     "000000",
+     "7C7C7C",
+     "BCBCBC"
+    ]
+   },
+   "note": "2 x 2 tiles, solid"
+  },
+  "bubble_tail": {
+   "x": 32,
+   "y": 64,
+   "w": 8,
+   "h": 4,
+   "layers": {
+    "1": [
+     "000000",
+     "FCFCFC"
+    ]
+   }
+  }
+ }
+}
